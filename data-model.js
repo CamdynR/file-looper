@@ -1,10 +1,10 @@
-import FileLoop from './lib/fil-loop.js';
+import FileLooper from './lib/fil-looper.js';
 
 // Create the FileLoop object - src required, dist optional, config optional
-const loop = new FileLoop('src', 'dist', {});
+const looper = new FileLooper('src', 'dist', {});
 
 // Add a plugin function
-loop.addPlugin(file => {
+looper.addPlugin(file => {
   // Some code here
   // file properties:
   //   Readonly:
@@ -45,7 +45,7 @@ loop.addPlugin(file => {
 //      - id (optional) only run the plugins with this id
 //      - categories (optional) only run the plugins with those categories
 //   - exclude (optional) only do the 
-loop.run({
+looper.run({
   numRuns: 1,
   onlyDo: {
     id: [],

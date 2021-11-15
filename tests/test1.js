@@ -1,8 +1,8 @@
 // test1.js
 
-import FileLoop from '../lib/file-loop.js';
+import FileLooper from '../lib/file-looper.js';
 
-const fl = new FileLoop('src', 'dist');
+const fl = new FileLooper('src', 'dist');
 
 fl.addPlugin(file => {
   console.log(file.runNumber);
