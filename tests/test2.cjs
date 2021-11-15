@@ -1,6 +1,4 @@
-// test1.js
-
-import FileLooper from '../lib/file-looper.js';
+const { FileLooper } = require('../lib/file-looper.cjs');
 
 const looper = new FileLooper('src', 'dist');
 

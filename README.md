@@ -30,13 +30,21 @@ Installation
 Getting Started
 -----
 
-Currently only `import` is supported but `require()` support is coming soon
+Both `import` and `require()` are supported, so you can use either syntax:
+
+`Import:`
 
 ```js
 import FileLooper from 'file-looper';
 ```
 
-`FileLooper` is a class, so to create a new one you simply
+`Require():`
+
+```js
+const { FileLooper } = require('file-looper');
+```
+
+Once you've imported / required it, `FileLooper` is a class, so to create a new one you simply
 
 ```js
 const looper = new FileLooper('src', 'dist');
