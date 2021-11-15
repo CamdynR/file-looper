@@ -28,7 +28,7 @@
   },
   "author": "Camdyn Rasque <hello@camdyn.dev>",
   "license": "ISC",
-  "private": "false",
+  "private": false,
   "engines": {
     "node": ">=14.16.0"
   },
