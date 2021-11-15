@@ -1,6 +1,6 @@
 {
   "name": "file-looper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a dist dir from a src dir, loop through and apply any plugins you like",
   "keywords": [
     "file",
