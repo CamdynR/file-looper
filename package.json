@@ -19,8 +19,8 @@
   "main": "file-loop.js",
   "type": "module",
   "exports": {
-    "import": "./lib/file-loop.js",
-    "require": "./lib/file-loop.cjs"
+    "import": "./lib/file-looper.js",
+    "require": "./lib/file-looper.cjs"
   },
   "repository": {
     "type": "git",
