@@ -17,6 +17,7 @@ looper.addPlugin(file => {
   //   Mutable:
   //   - dataStr (file contents as a string)
   //   - document (JSDOM object, HTML only)
+  //   - useDoc
   //   - renameFile (rename the file)
   //     - fileName (without extension)
   //     - extension (optional)
@@ -40,13 +41,13 @@ looper.addPlugin(file => {
 });
 
 // Run the loop, config optional
-//   - numRuns (optional) how many loops to complete, 1 by default
+//   - numLoops (optional) how many loops to complete, 1 by default
 //   - onlyDo (optional) only do the plugins that match these options
 //      - id (optional) only run the plugins with this id
 //      - categories (optional) only run the plugins with those categories
 //   - exclude (optional) only do the 
 looper.run({
-  numRuns: 1,
+  numLoops: 1,
   onlyDo: {
     id: [],
     categories: []

@@ -1,6 +1,6 @@
 {
   "name": "file-looper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a dist dir from a src dir, loop through and apply any plugins you like",
   "keywords": [
     "file",
@@ -33,7 +33,7 @@
     "node": ">=14.16.0"
   },
   "engineStrict": true,
-  "devDependencies": {
+  "dependencies": {
     "fs-extra": "10.0.0",
     "jsdom": "18.1.0"
   }
