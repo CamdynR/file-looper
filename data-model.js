@@ -17,28 +17,18 @@ loop.addPlugin(file => {
   id: '',
   categories: [],
   onlyDo: {
-    files: [],
+    fullFilePaths: [],
+    fullFileNames: [],
+    fileNames: [],
     directories: [],
-    extensions: [],
-    regex: [
-      {
-        files: [],
-        directories: [],
-        extensions: []
-      }
-    ]
+    extensions: []
   },
   exclude: {
-    files: [],
+    fullFilePath: [],
+    fullFileNames: [],
+    fileNames: [],
     directories: [],
-    extensions: [],
-    regex: [
-      {
-        files: [],
-        directories: [],
-        extensions: []
-      }
-    ]
+    extensions: []
   }
 });
 
@@ -55,10 +45,13 @@ loop.run({
   onlyDo: [
     {
       id: '',
-      categories: [],
-      directories: [],
-      extensions: [],
-      regex: []
+      categories: []
+    }
+  ],
+  exclude: [
+    {
+      id: '',
+      categories: []
     }
   ]
 });
