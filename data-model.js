@@ -17,14 +17,28 @@ loop.addPlugin(file => {
   id: '',
   categories: [],
   onlyDo: {
+    files: [],
     directories: [],
     extensions: [],
-    regex: []
+    regex: [
+      {
+        files: [],
+        directories: [],
+        extensions: []
+      }
+    ]
   },
-  skip: {
+  exclude: {
+    files: [],
     directories: [],
     extensions: [],
-    regex: []
+    regex: [
+      {
+        files: [],
+        directories: [],
+        extensions: []
+      }
+    ]
   }
 });
 

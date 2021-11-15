@@ -14,6 +14,7 @@
   "author": "Camdyn Rasque <hello@camdyn.dev>",
   "license": "ISC",
   "devDependencies": {
-    "fs-extra": "10.0.0"
+    "fs-extra": "10.0.0",
+    "jsdom": "^18.1.0"
   }
 }
