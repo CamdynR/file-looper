@@ -5,10 +5,21 @@ import FileLoop from '../lib/file-loop.js';
 const fl = new FileLoop('src', 'dist');
 
 fl.addPlugin(file => {
-  if (file.extension == 'html') {
-    file.document.querySelector('body').innerHTML += '<!-- Test -->';
-    file.useDoc = true;
+  console.log(file.runNumber);
+  file.renameFile = {
+    fileName: file.fileName,
+    extension: `min.${file.extension}`
+  }
+}, {
+  id: 'demoPlugin',
+  categories: ['demo', 'plugin'],
+  onlyDo: {
+    extensions: ['html']
   }
 });
 
-fl.run();
+fl.run({
+  onlyDo: {
+    categories: ['demo']
+  }
+});

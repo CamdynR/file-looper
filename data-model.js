@@ -7,12 +7,19 @@ const loop = new FileLoop('src', 'dist', {});
 loop.addPlugin(file => {
   // Some code here
   // file properties:
-  //   - fullPath
-  //   - relativePath
+  //   Readonly:
+  //   - runNumber (runs start at 1)
+  //   - fullPath (absolute path of file)
+  //   - relativePath (relative path of file)
   //   - fullFileName (w extension)
   //   - fileName (no extension)
   //   - extension
-  //   - data (file contents as a string)
+  //   Mutable:
+  //   - dataStr (file contents as a string)
+  //   - document (JSDOM object, HTML only)
+  //   - renameFile (rename the file)
+  //     - fileName (without extension)
+  //     - extension (optional)
 }, {
   id: '',
   categories: [],
@@ -37,21 +44,15 @@ loop.addPlugin(file => {
 //   - onlyDo (optional) only do the plugins that match these options
 //      - id (optional) only run the plugins with this id
 //      - categories (optional) only run the plugins with those categories
-//      - directories (optional) only run the plugins with those directoriess
-//      - extensions (optional) only run the plugins with those extensions
-//      - regex (optional) only run the plugins with those regex
+//   - exclude (optional) only do the 
 loop.run({
   numRuns: 1,
-  onlyDo: [
-    {
-      id: '',
-      categories: []
-    }
-  ],
-  exclude: [
-    {
-      id: '',
-      categories: []
-    }
-  ]
+  onlyDo: {
+    id: [],
+    categories: []
+  },
+  exclude: {
+    id: [],
+    categories: []
+  }
 });
