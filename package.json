@@ -26,6 +26,9 @@
     "type": "git",
     "url": "https://github.com/CamdynR/file-looper"
   },
+  "scripts": {
+    "test": "node ./lib/__tests__/ES6/run-tests.js"
+  },
   "author": "Camdyn Rasque <hello@camdyn.dev>",
   "license": "ISC",
   "private": false,

@@ -1,14 +1,13 @@
 FileLooper
 =================
 
-`FileLooper` allows you to easily build a `dist` (distribution) directory from a `src` directory of your choosing. Add plugins to run on select files to modify the file contents or name.
+`FileLooper` is a simple lightweight task runner. Easily add Plugins (tasks) to run on select files to modify the file contents or name.
 
 
 Why?
 ----
 
-I couldn't really find a nice clean way to build a `dist` directory in my CI pipelines without hand making some version of it or including a heavy tool. I also found myself looping over the same files over and over again and wanted a way to do everything in one clean loop.
-
+I found the runners I was using had a lot of overhead and features I never touched, so I wanted something small with just what I needed. Made this for myself, thought I should share it.
 
 General Overview
 ----------------
